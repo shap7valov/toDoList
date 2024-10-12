@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href='/style/style.css'>
+</head>
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Название задачи" required>
+            <input type="number" id="task-number" placeholder="Номер задачи" required>
+            <select id="task-priority">
+                <option value="critical">Критическая</option>
+                <option value="passed">Пройдена</option>
+                <option value="new">Новая</option>
+            </select>
+            <button type="submit">Добавить задачу</button>
+        </form>
+
+        <h2>Список задач</h2>
+        <select id="filter">
+            <option value="all">Все задачи</option>
+            <option value="critical">Критическая</option>
+            <option value="passed">Пройдена</option>
+            <option value="new">Новая</option>
+        </select>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="/src/main.js"></script>
+</body>
+</html>
